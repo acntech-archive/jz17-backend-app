@@ -12,7 +12,8 @@ public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String task;
+    private String title;
+    private String description;
     private boolean done;
 
     public Long getId() {
@@ -23,19 +24,27 @@ public class Todo {
         this.id = id;
     }
 
-    public String getTask() {
-        return task;
-    }
-
-    public void setTask(String task) {
-        this.task = task;
-    }
-
     public Boolean getDone() {
         return done;
     }
 
     public void setDone(Boolean done) {
         this.done = done;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
