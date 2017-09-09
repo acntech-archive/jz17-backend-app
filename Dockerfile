@@ -24,6 +24,6 @@ CMD [ "dockerize", \
 
 # Add labels
 ARG GIT_COMMIT=unknown
-LABEL no.vegvesen.autosys.git.commitHash=$GIT_COMMIT
+LABEL jz17demo.git.commitHash=$GIT_COMMIT
 
 COPY target/backend-app-*.war /usr/local/tomcat/webapps/backend.war
