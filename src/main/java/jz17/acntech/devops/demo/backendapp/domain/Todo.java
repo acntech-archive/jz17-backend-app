@@ -41,7 +41,7 @@ public class Todo {
     }
 
     public String getDescription() {
-        return description;
+        return "Det ordner seg...";
     }
 
     public void setDescription(String description) {
